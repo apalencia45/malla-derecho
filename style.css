@@ -1,0 +1,47 @@
+body {
+  font-family: sans-serif;
+  padding: 2rem;
+  background: #FFF0F5;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.semester {
+  background: #FFB6C1;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.semester h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.course {
+  background: #FFC0CB;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin: 5px 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.course.completed {
+  background: #DB7093;
+}
+
+.course.locked {
+  background: #ddd;
+  color: #888;
+  cursor: not-allowed;
+}
